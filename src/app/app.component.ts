@@ -11,17 +11,5 @@ import { ApiService } from './requests/api.service';
 })
 export class AppComponent {
 
-  constructor(
-    private api: ApiService
-  ){}
-  ngOnInit(): void {
-    console.log('LoginComponent initialized');
-    this.api.post('/auth/login', {'loginName':'admin','password':'1234'}).subscribe(
-      (respose) => {
-        console.log(respose)
-      }
-    )
-    
-  }
   title = 'frontend';
 }
