@@ -1,5 +1,14 @@
-<div class="card">
-    <input type="text" [(ngModel)] = "loginName">
-    <input type="password" [(ngModel)] = "password">
-    <button (click)="login()" >Login</button>
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4 shadow-lg" style="width: 350px;">
+        <h3 class="text-center mb-3">Login</h3>
+        <div class="form-floating mb-3">
+            <input id="loginName" type="text" class="form-control" placeholder="Username" [(ngModel)]="loginName">
+            <label for="loginName">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input id="password" type="password" class="form-control" placeholder="Password" [(ngModel)]="password">
+            <label for="password">Password</label>
+        </div>
+        <button class="btn btn-primary w-100" (click)="login()">Login</button>
+    </div>
 </div>
